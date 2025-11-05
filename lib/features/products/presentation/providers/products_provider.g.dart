@@ -392,7 +392,7 @@ final class SelectedProductProvider
   }
 }
 
-String _$selectedProductHash() => r'd4e88b11a655cc30fa18fb4da22bd01dcda654ef';
+String _$selectedProductHash() => r'ba75969c0707fa882a670d80aa568c814730885c';
 
 final class SelectedProductFamily extends $Family
     with $FunctionalFamilyOverride<Product?, int> {

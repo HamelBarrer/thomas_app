@@ -269,14 +269,10 @@ final class DeleteSaleUseCaseProvider
 
 String _$deleteSaleUseCaseHash() => r'176f853007f8c66ba6aca4d8c5eb2aafdc305324';
 
-/// Provider for the search/filter query
-
 @ProviderFor(SalesFilter)
 const salesFilterProvider = SalesFilterProvider._();
 
-/// Provider for the search/filter query
 final class SalesFilterProvider extends $NotifierProvider<SalesFilter, String> {
-  /// Provider for the search/filter query
   const SalesFilterProvider._()
     : super(
         from: null,
@@ -306,8 +302,6 @@ final class SalesFilterProvider extends $NotifierProvider<SalesFilter, String> {
 
 String _$salesFilterHash() => r'10ce8f74109f43ffa57c1f88291c613353d98923';
 
-/// Provider for the search/filter query
-
 abstract class _$SalesFilter extends $Notifier<String> {
   String build();
   @$mustCallSuper
@@ -327,15 +321,11 @@ abstract class _$SalesFilter extends $Notifier<String> {
   }
 }
 
-/// Provider for filtered sales list
-
 @ProviderFor(FilteredSales)
 const filteredSalesProvider = FilteredSalesProvider._();
 
-/// Provider for filtered sales list
 final class FilteredSalesProvider
     extends $AsyncNotifierProvider<FilteredSales, List<Sale>> {
-  /// Provider for filtered sales list
   const FilteredSalesProvider._()
     : super(
         from: null,
@@ -356,8 +346,6 @@ final class FilteredSalesProvider
 }
 
 String _$filteredSalesHash() => r'c83bf4f4b5ef8ce4be051b24f3d0b23f77d62eb1';
-
-/// Provider for filtered sales list
 
 abstract class _$FilteredSales extends $AsyncNotifier<List<Sale>> {
   FutureOr<List<Sale>> build();
@@ -401,7 +389,7 @@ final class SalesProvider extends $AsyncNotifierProvider<Sales, List<Sale>> {
   Sales create() => Sales();
 }
 
-String _$salesHash() => r'05f66ae99cbc0f6168873950e1cb18fac5e13470';
+String _$salesHash() => r'db959a35616c4785cb969216fbdd64225249905b';
 
 abstract class _$Sales extends $AsyncNotifier<List<Sale>> {
   FutureOr<List<Sale>> build();
