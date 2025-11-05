@@ -1,0 +1,49 @@
+name: thomas_app
+description: "A Flutter app for managing products and sales with DDD architecture."
+
+version: 1.0.0+1
+
+environment:
+  sdk: 3.10.0-162.1.beta
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  flutter_localizations:
+    sdk: flutter
+  
+  # State Management
+  riverpod: 3.0.3
+  riverpod_annotation: 3.0.3
+  flutter_riverpod: 3.0.3
+  
+  # Networking
+  dio: 5.9.0
+  
+  # Navigation
+  go_router: 16.3.0
+  
+  # Local Database
+  sqflite: 2.4.2
+  sqflite_common_ffi: 2.3.6
+  path: 1.9.1
+  
+  # Icons
+  cupertino_icons: 1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # Linting
+  flutter_lints: 6.0.0
+  riverpod_lint: 3.0.3
+  
+  # Code Generation
+  build_runner: 2.10.1
+  riverpod_generator: 3.0.3
+
+
+flutter:
+  uses-material-design: true
